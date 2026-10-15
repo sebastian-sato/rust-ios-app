@@ -60,5 +60,9 @@ struct Backend {
     static func update_last_packing_avg(this_packing_avg: Double) {
         last_packing_avg = this_packing_avg
     }
+    
+    static func reset_avg_packing_tracking() {
+        packing_times = []
+    }
 }
 

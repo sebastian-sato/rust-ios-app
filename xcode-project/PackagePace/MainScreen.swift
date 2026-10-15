@@ -41,7 +41,7 @@ struct MainScreen: View {
                 let avg_packing_time: Double = get_avg_pack_time()
                 Text("Average pack time:")
                     .bold()
-                Text(String(avg_packing_time) + "seconds")
+                Text(String(avg_packing_time) + " seconds")
             }
             
             Group {
@@ -62,6 +62,7 @@ struct MainScreen: View {
                     
                     if success {
                         page = 1
+                        Backend.reset_avg_packing_tracking()
                         Backend.init_data_registry()
                     } else {
                         shows_alert.toggle()

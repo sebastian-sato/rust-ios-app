@@ -16,4 +16,6 @@ or for the simulator:
 cargo build --target aarch64-apple-ios-sim
 ```
 
+Note that the XCode project expects that the static library and header file contained within the "backend" folder to be in the same location relative to it.
+
 <img src='./Screenshot%202026-10-15%20at%202.16.20%20PM.png' width=60%>
